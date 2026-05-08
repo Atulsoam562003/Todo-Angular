@@ -1,3 +1,5 @@
+<div class="container">
+    <h1 class="text-center">My Todos List</h1>
 <app-todo-add (todoAdd)="todoAdd($event)"></app-todo-add>
 <h4>
     Your Todos
@@ -10,3 +12,4 @@
         <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)" (todoChecked)="toggleTodo($event)"></app-todo-item>
     </div>
 </ng-template>
+</div>
