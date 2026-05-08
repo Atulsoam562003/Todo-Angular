@@ -1,12 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Todos } from './MyComponents/todos/todos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Todos],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('first-angular-app');
+  title = 'first-angular-app';
+
 }
